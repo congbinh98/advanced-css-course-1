@@ -6,3 +6,113 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+/* reset css */
+
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body { 
+    height: 2000px;
+}
+.wrap-container { 
+    margin: 27px;
+}
+.header { 
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    position: relative;;
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+
+}
+
+.nav-container { 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { 
+    width: 65px;
+    object-fit: contain;
+    margin: 20px;
+}
+
+
+
+.nav-toggle { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    right: 45px;
+    top: 35px;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+    cursor: pointer;
+
+}
+
+.icon-menu { 
+    display: inline-block;
+    background-image: url("../img/menu.png");
+    height: 32px;
+    width: 32px;
+}
+
+.hidden { 
+    display: none;
+}
+
+.header__text-box {
+    /* flex-grow: 2; */
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__text-box .header-titlle { 
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header__text-box .header-sub-title { 
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header__text-box .header-tour-link { 
+    margin-top: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #777;
+}
